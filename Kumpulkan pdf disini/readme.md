@@ -1,1 +1,1 @@
-pastikan aanda mengumpulkan dalam format pdf, bukan word
+pastikan anda mengumpulkan dalam format pdf, bukan word
