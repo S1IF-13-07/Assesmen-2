@@ -1,0 +1,25 @@
+package main
+
+import "fmt"
+
+func main(){
+	var a, b, c int
+	fmt.Print("masukkan sisi a = ")
+	fmt.Scan(&a)
+	fmt.Print("masukkan sisi b = ")
+	fmt.Scan(&b)
+	fmt.Print("masukkan sisi c = ")
+	fmt.Scan(&c)
+
+	if a == b && b == c {
+		fmt.Println("segitiga sama sisi")
+	} else if a == b || a == c || b == c {
+		fmt.Println("segitiga sama kaki")
+	} else if (a*a + b*b == c*c) || (a*a + c*c == b*b) || (b*b + c*c == a*a) {
+		fmt.Println("segitiga siku-siku")
+	} else if a+b <= c || a+c <= b || b+c <= a {
+    	fmt.Println("Bukan segitiga")
+	} else {
+		fmt.Println("segitiga sembarang")
+	}
+}
