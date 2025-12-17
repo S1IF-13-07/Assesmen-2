@@ -1,0 +1,46 @@
+package main
+
+import "fmt"
+
+func main() {
+	var pilihan, jumlah int
+	var namaProduk string
+	var harga, total int
+
+	fmt.Println(" DAFTAR PRODUK TOKO BUDI ")
+	fmt.Println("1. Little Trees      - Rp35.000")
+	fmt.Println("2. Lap Microfiber    - Rp25.000")
+	fmt.Println("3. Cover Steer       - Rp150.000")
+	fmt.Println("4. Sponge Cuci Mobil - Rp10.000")
+
+	fmt.Print("Pilih produk : ")
+	fmt.Scan(&pilihan)
+
+	fmt.Print("Masukkan jumlah produk yang akan di beli : ")
+	fmt.Scan(&jumlah)
+
+	if pilihan == 1 {
+		namaProduk = "Little Trees"
+		harga = 35000
+	} else if pilihan == 2 {
+		namaProduk = "Lap Microfiber"
+		harga = 25000
+	} else if pilihan == 3 {
+		namaProduk = "Cover Steer"
+		harga = 150000
+	} else if pilihan == 4 {
+		namaProduk = "Sponge Cuci Mobil"
+		harga = 10000
+	} else {
+		fmt.Println("Maaf pilihan tidak valid")
+		return
+	}
+
+	total = harga * jumlah
+
+	fmt.Println("\n STRUK PEMBAYARAN ")
+	fmt.Println("Produk :", namaProduk)
+	fmt.Println("Harga  : Rp", harga)
+	fmt.Println("Jumlah :", jumlah)
+	fmt.Println("Total  : Rp", total)
+}
